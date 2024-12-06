@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>我的个人作品集</title>
+    <style>
+        /* 全局样式 */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f8f8;
+            color: #333;
+        }
+
+        h1, h2, h3 {
+            color: #333;
+        }
+
+        /* 导航栏样式 */
+        nav {
+            background-color: #333;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 10px 20px;
+            margin: 0 10px;
+            font-size: 18px;
+        }
+
+        nav a:hover {
+            background-color: #575757;
+            border-radius: 5px;
+        }
+
+        /* 主内容区样式 */
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 40px;
+        }
+
+        .intro {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 40px;
+        }
+
+        .intro img {
+            width: 40%;
+            border-radius: 50%;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .intro div {
+            width: 55%;
+        }
+
+        .intro h2 {
+            font-size: 2.5em;
+            margin-bottom: 20px;
+        }
+
+        .intro p {
+            font-size: 1.2em;
+            line-height: 1.6;
+        }
+
+        /* 作品展示区样式 */
+        .projects {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 20px;
+            margin-bottom: 40px;
+        }
+
+        .project-card {
+            background-color: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        .project-card img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+            margin-bottom: 20px;
+        }
+
+        .project-card h3 {
+            font-size: 1.8em;
+            margin-bottom: 10px;
+        }
+
+        .project-card p {
+            font-size: 1em;
+            line-height: 1.4;
+            color: #666;
+        }
+
+        /* 社交媒体链接区 */
+        .social-links {
+            text-align: center;
+            margin-top: 40px;
+        }
+
+        .social-links a {
+            text-decoration: none;
+            color: #333;
+            font-size: 2em;
+            margin: 0 20px;
+        }
+
+        .social-links a:hover {
+            color: #4CAF50;
+        }
+
+        /* 页脚样式 */
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- 导航栏 -->
+    <nav>
+        <a href="#about">关于我</a>
+        <a href="#projects">作品展示</a>
+        <a href="#contact">联系方式</a>
+    </nav>
+
+    <!-- 主体内容 -->
+    <div class="container">
+        <!-- 关于我 -->
+        <section id="about" class="intro">
+            <div>
+                <h2>关于我</h2>
+                <p>您好！我是张三，一名热衷于网页设计和前端开发的工程师。我致力于创建响应式、用户友好的网站，拥有多年的开发经验。通过我的作品集，您可以了解我的技能、经验以及我为不同客户和项目所做的贡献。</p>
+            </div>
+            <img src="https://via.placeholder.com/300" alt="我的照片">
+        </section>
+
+        <!-- 作品展示 -->
+        <section id="projects">
+            <h2>我的作品</h2>
+            <div class="projects">
+                <div class="project-card">
+                    <img src="https://via.placeholder.com/600x400" alt="项目1">
+                    <h3>项目名称 1</h3>
+                    <p>这是一个响应式网页，专为移动设备设计。它使用了最新的前端技术，如 HTML5、CSS3 和 JavaScript。</p>
+                </div>
+                <div class="project-card">
+                    <img src="https://via.placeholder.com/600x400" alt="项目2">
+                    <h3>项目名称 2</h3>
+                    <p>这是一个电子商务网站，功能包括购物车、支付集成和库存管理。</p>
+                </div>
+                <div class="project-card">
+                    <img src="https://via.placeholder.com/600x400" alt="项目3">
+                    <h3>项目名称 3</h3>
+                    <p>这个项目展示了我为客户构建的企业网站，包含了动态内容和交互式元素。</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- 联系我 -->
+        <section id="contact" class="social-links">
+            <h2>联系我</h2>
+            <p>如果您有任何问题或想要合作，欢迎通过以下方式与我联系：</p>
+            <a href="https://github.com" target="_blank">GitHub</a>
+            <a href="https://www.linkedin.com" target="_blank">LinkedIn</a>
+            <a href="mailto:example@email.com" target="_blank">Email</a>
+        </section>
+    </div>
+
+    <!-- 页脚 -->
+    <footer>
+        <p>&copy; 2024 张三. 版权所有.</p>
+    </footer>
+
+</body>
+</html>
